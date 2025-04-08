@@ -1,0 +1,528 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Oswald:wght@200..700&family=Sanchez:ital@0;1&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #4b39b5;
+  background-image: url("img/Unleash\ Your\ Knowledge\ Where\ Every\ Answer\ is\ Just\ a\ Click\ Away!.\ \(1\).jpg");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: 80% 100%;
+}
+@media screen and (max-width: 1025px) {
+  body {
+    width: 100%;
+    height: 100vh;
+    background-color: #4b39b5;
+    background-image: url("img/Unleash\ Your\ Knowledge\ Where\ Every\ Answer\ is\ Just\ a\ Click\ Away!.\ \(1\).jpg");
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: 84% 42%;
+  }
+}
+@media screen and (max-width: 769px) {
+  body {
+    width: 100%;
+    height: 100vh;
+    background-color: #4b39b5;
+    background-image: url("img/Unleash\ Your\ Knowledge\ Where\ Every\ Answer\ is\ Just\ a\ Click\ Away!.\ \(1\).jpg");
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: 84% 20%;
+  }
+}
+@media screen and (max-width: 618px) {
+  body {
+    width: 100%;
+    height: 100vh;
+    background-color: #4b39b5;
+    background-image: url("img/Unleash\ Your\ Knowledge\ Where\ Every\ Answer\ is\ Just\ a\ Click\ Away!.\ \(1\).jpg");
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: 75% 20%;
+  }
+}
+@media screen and (max-width: 530px) {
+  body {
+    width: 100%;
+    height: 100vh;
+    background-color: #4b39b5;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+/*Utility class css*/
+.container {
+  padding: 60px 80px;
+}
+
+/*Header css*/
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+.logo-para {
+  font-size: 42px;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  color: white;
+}
+@media screen and (max-width: 769px) {
+  .logo img {
+    width: 30px;
+    height: 30px;
+  }
+  .logo-para {
+    font-size: 26px;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 700;
+    color: white;
+  }
+  .container {
+    padding: 40px 60px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .logo img {
+    width: 20px;
+    height: 20px;
+  }
+  .logo-para {
+    font-size: 18px;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 700;
+    color: white;
+  }
+  .container {
+    padding: 30px 50px;
+  }
+}
+
+/*Main section Css starts here*/
+.tag-line {
+  font-family: "League Spartan", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  color: white;
+  padding-right: 20%;
+  line-height: 68px;
+}
+.main-content {
+  height: 100%;
+  width: 60vw;
+  padding-top: 50px;
+}
+.randon-btn button {
+  padding: 5px 20px;
+  border-radius: 40px;
+  border: none;
+  background-color: #fd7140;
+  font-size: 18px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  transition: ease-in-out 0.3s;
+}
+.randon-btn button:hover {
+  background-color: #ff8153;
+  color: rgb(31, 31, 31);
+}
+span {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  color: #fd7140;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.craousal-para {
+  font-family: "Sanchez", serif;
+  font-size: 24px;
+  color: white;
+  margin-top: 6%;
+}
+.main-carousal {
+  background-color: #8c79fd;
+  width: 55vw;
+  height: 24vh;
+  margin-top: 10px;
+  border-radius: 15px;
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  scroll-snap-type: x mandatory;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.main-carousal::-webkit-scrollbar {
+  display: none;
+}
+.card {
+  background-color: #4b39b5;
+  min-width: 160px;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5px;
+}
+.card img {
+  width: 95%;
+  height: 70%;
+  border-radius: 8px;
+}
+.card-btn {
+  width: 92%;
+  font-size: 14px;
+  padding: 5px;
+  margin-top: 5px;
+  font-family: "Oswald", sans-serif;
+  background-color: #fd7140;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  transition: ease-in-out 0.3s;
+}
+.card-btn:hover {
+  background-color: #ff8153;
+  color: rgb(31, 31, 31);
+}
+.small-screen-img {
+  display: none;
+}
+@media screen and (max-width: 1025px) {
+  .tag-line {
+    font-family: "League Spartan", sans-serif;
+    font-size: 46px;
+    font-weight: 700;
+    color: white;
+    line-height: 56px;
+  }
+  .main-carousal{
+    height: 27vh;
+  }
+}
+@media screen and (max-width: 769px) {
+  .tag-line {
+    font-family: "League Spartan", sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    color: white;
+    padding-right: 20%;
+    line-height: 44px;
+  }
+  .randon-btn button {
+    padding: 5px 20px;
+    border-radius: 40px;
+    border: none;
+    background-color: #fd7140;
+    font-size: 14px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    transition: ease-in-out 0.3s;
+  }
+  span {
+    display: none;
+  }
+  .craousal-para {
+    font-family: "Sanchez", serif;
+    font-size: 20px;
+    color: white;
+    margin-top: 15%;
+  }
+  .main-carousal {
+    background-color: #8c79fd;
+    width: 84vw;
+    height: 27vh;
+    margin-top: 10px;
+    border-radius: 15px;
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    scroll-snap-type: x mandatory;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+}
+@media screen and (max-width: 618px) {
+  .main-carousal {
+    background-color: #8c79fd;
+    width: 79vw;
+    height: 27vh;
+    margin-top: 10px;
+    border-radius: 15px;
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    scroll-snap-type: x mandatory;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .main-content {
+    height: 100%;
+    width: 60vw;
+    padding-top: 30px;
+  }
+  .main-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .tag-line {
+    font-family: "League Spartan", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: white;
+    line-height: 28px;
+    padding: 0px;
+    text-align: center;
+  }
+  .randon-btn button {
+    padding: 5px 20px;
+    border-radius: 40px;
+    border: none;
+    background-color: #fd7140;
+    font-size: 14px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    margin-top: 15%;
+    display: flex;
+    align-items: center;
+    transition: ease-in-out 0.3s;
+  }
+  span {
+    display: none;
+  }
+  .carousal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .craousal-para {
+    font-family: "Sanchez", serif;
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;
+    align-self: center;
+  }
+  .card {
+    background-color: #4b39b5;
+    min-width: 180px;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+  }
+  .card img {
+    width: 100%;
+    height: 80%;
+    border-radius: 8px;
+  }
+  .card-btn {
+    width: 100%;
+    font-size: 16px;
+    padding: 5px;
+    margin-top: 5px;
+    font-family: "Oswald", sans-serif;
+    background-color: #fd7140;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: ease-in-out 0.3s;
+  }
+  .small-screen-img {
+    display: inline-block;
+    width: 80%;
+    margin-top: 20px;
+  }
+  .main-carousal {
+    background-color: #8c79fd;
+    width: 75vw;
+    height: 30vh;
+    margin: 10px 0px 40px 0px;
+    border-radius: 15px;
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    scroll-snap-type: x mandatory;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+}
+
+/*Css of Section which contain Questions and Answer*/
+.question-container {
+  height: 77.5vh;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 40px;
+  display: none;
+  flex-direction: column;
+}
+.questions-content {
+  width: 100%;
+  height: 15%;
+  background-color: #8c79fd;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "League Spartan", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  padding: 20px;
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+ul li {
+  border: 2px solid #4b39b5;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 26px;
+  font-weight: 500;
+}
+.options {
+  background-color: #8c79fd;
+  width: 100%;
+  height: 85%;
+  border-radius: 20px;
+  color: white;
+  font-family: "League Spartan", sans-serif;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+.next-btn {
+  padding: 6px 30px;
+  background-color: #fd7140;
+  color: black;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  font-size: 24px;
+  margin-top: 10px;
+}
+.right{
+    color: #00FF00;
+    font-size: 26px;
+    font-weight: 500;
+    margin-top: 20px;
+    display: none;
+}
+.wrong{
+    color: #9e0000;
+    font-size: 26px;
+    font-weight: 500;
+    margin-top: 20px;
+    display: none;
+}
+.selected{
+  background-color: #6d54ff;
+}
+@media screen and (max-width: 530px){
+  .right, .wrong{
+    font-size: 22px;
+  }
+  .next-btn{
+    font-size: 20px;
+  }
+  ul li{
+    font-size: 22px;
+  }
+  .questions-content{
+    font-size: 24px;
+    height: 20%;
+  }
+}
+
+/*End Quiz Section Css is here*/
+.question-container{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.question-container img{
+  width: 380px;
+  height: 380px;
+}
+.question-container{
+  color: white;
+  font-family: "League Spartan", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  padding: 20px;
+  text-align: center;
+}
+#home-btn{
+  padding: 6px 30px;
+  background-color: #fd7140;
+  color: black;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  font-size: 24px;
+  margin: 10px;
+}
+@media screen and (max-width: 530px){
+  .question-container img{
+    width: 290px;
+    height: 290px;
+  }
+  .question-container{
+    color: white;
+    font-family: "League Spartan", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 20px;
+    text-align: center;
+  }
+  #home-btn{
+    padding: 6px 30px;
+    background-color: #fd7140;
+    color: black;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    margin: 10px;
+  }
+}
+
